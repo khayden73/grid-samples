@@ -1,0 +1,43 @@
+@use "../base";
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.site-content {
+    padding: 2rem;
+
+    nav {
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: 0.3rem;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        ul {
+            display: grid;
+            grid-row-gap: 1ch;
+        }
+
+        li {
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+}
+
+.site-header {
+    background-color: rgba(black, 0.1);
+    padding: 1rem;
+}
+
+.site-footer {
+    background-color: rgba(black, 0.1);
+    padding: 1rem;
+}

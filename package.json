@@ -1,0 +1,15 @@
+{
+  "name": "grids-and-things",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8"
+  }
+}

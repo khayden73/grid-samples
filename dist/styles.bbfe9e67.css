@@ -1,0 +1,89 @@
+:root {
+  --bg-color: aliceblue;
+  --text-color: midnightblue;
+  --text-size: 2rem;
+  --line-height: 1.8em;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: var(--text-size);
+  line-height: var(--line-height);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tile-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 800px) {
+  .tile-grid.with-mq {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tile-grid.with-mq {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.tile-grid.with-auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.tile-grid.with-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+  max-width: 900px;
+}
+.tile-grid li {
+  background-color: darkorange;
+  width: 100%;
+}
+@supports (aspect-ratio: 16/9) {
+  .tile-grid li {
+    aspect-ratio: 16/9;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  --bg-color: lavender;
+  --text-color: sienna;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+body > header {
+  background-color: lightskyblue;
+  padding: 2rem;
+}
+body > main {
+  background-color: lightgoldenrodyellow;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=/styles.bbfe9e67.css.map */

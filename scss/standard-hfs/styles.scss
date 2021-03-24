@@ -1,0 +1,45 @@
+@use "../base";
+
+body {
+    --bg-color: lavender;
+    --text-color: sienna;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: 1fr minmax(100px, 200px);
+    }
+
+    @media screen and (min-width: 900px) {
+        grid-template-columns: 1fr 300px;
+    }
+
+    > header {
+        background-color: lightskyblue;
+        grid-column: 1 / -1;
+        padding: 2rem;
+    }
+
+    > main {
+        background-color: lightgoldenrodyellow;
+        padding: 2rem;
+    }
+
+    > aside {
+        background-color: palevioletred;
+        padding: 2rem;
+
+        ul {
+            line-height: 1.2em;
+        }
+    }
+
+    > footer {
+        background-color: darkseagreen;
+        grid-column: 1 / -1;
+        padding: 2rem;
+        font-weight: 700;
+    }
+}
