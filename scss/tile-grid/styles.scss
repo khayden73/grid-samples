@@ -2,8 +2,6 @@
 @use "tile-grid";
 
 body {
-    --bg-color: lavender;
-    --text-color: sienna;
     display: grid;
     grid-template-rows: auto 1fr;
     height: 100vh;
