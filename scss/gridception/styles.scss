@@ -1,0 +1,18 @@
+@use "../base";
+@use "../tile-grid/tile-grid";
+@use "grids";
+
+body {
+    --bg-color: lavender;
+    --tile-bg-color: sienna;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 5rem;
+
+    > header {
+        background-color: sienna;
+        color: lightgoldenrodyellow;
+        letter-spacing: 0.3ch;
+        padding: 2rem;
+    }
+}
