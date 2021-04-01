@@ -1,20 +1,20 @@
-## Grid Samples
+# Grid Samples
 
 This is just a collection of different CSS Grid examples.
 
 As I encounter new ways to use CSS Grid, I'll be adding more examples.
 
-### Examples
+## Examples
 
-#### Standard header/footer/sidebar
+### Standard header/footer/sidebar
 
 Simple and common layout
 
-#### Tile Grids
+### Tile Grids
 
-For displaying collection cards
+For displaying collection of things, like cards, photos, etc.
 
-#### Gridception
+### Gridception
 
 Grids in grids in grids
 
