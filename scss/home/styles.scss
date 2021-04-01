@@ -8,28 +8,6 @@ body {
 
 .site-content {
     padding: 2rem;
-
-    nav {
-
-        a {
-            text-decoration: underline;
-            text-underline-offset: 0.3rem;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        ul {
-            display: grid;
-            grid-row-gap: 1ch;
-        }
-
-        li {
-            font-size: 2rem;
-            line-height: 2.4rem;
-        }
-    }
 }
 
 .site-header {
@@ -40,4 +18,49 @@ body {
 .site-footer {
     background-color: rgba(black, 0.1);
     padding: 1rem;
+}
+
+.grid-list {
+    list-style: none;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    display: grid;
+    grid-row-gap: 1ch;
+
+    li {
+        margin: 2rem 0;
+        padding: 2rem 0;
+
+        & + li {
+            border-top: 2px solid rgba(midnightblue, 0.2);
+        }
+    }
+
+    nav {
+        padding: 2rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: 0.3rem;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.grid-details {
+    summary {
+        cursor: pointer;
+        list-style-image: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
 }
